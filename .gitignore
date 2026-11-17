@@ -1,0 +1,41 @@
+# .NET build and publish output
+[Bb]in/
+[Oo]bj/
+[Aa]rtifacts/
+
+# Local Visual Studio and Rider settings
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Test and coverage output
+[Tt]est[Rr]esults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+# Generated NuGet packages
+*.nupkg
+*.snupkg
+
+# Logs
+*.log
+
+# Local configuration; keep shared appsettings files in Git
+appsettings.Local.json
+appsettings.*.Local.json
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
