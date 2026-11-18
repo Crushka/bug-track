@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 2rem 1rem;
+    background-color: #F6F7FB;
+    font-family: 'Balsamiq Sans', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: -1px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 11px 12px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+
+#user-box {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    gap: 14px;
+}
+
+#user-info {
+    font-size: 12px;
+    line-height: 16px;
+    color: #1E293B;
+}
+
+#logo {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    height: 46px;
+    align-items: center;
+    font-size: 32px;
+    line-height: 45px;
+    color: #4F46E5;
+    gap: 3px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 816px;
+    align-items: center;
+}
+
+main p {
+    font-size: 32px;
+    line-height: 16px;
+    color: #1E293B;
+}
+
+#button-box {
+    display: flex;
+    gap: 26px;
+}
+
+#button-box :first-child {
+    background-color: #4F46E5;
+    color: #FFFFFF;
+}
+
+#button-box :last-child {
+    background-color: #FFFFFF;
+    border: 2px solid #4F46E5;
+    color: #4F46E5;
+    padding: 14px 82px;
+}
+
+.team-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    width: 328px;
+    padding: 14px 98px;
+    border: 0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
