@@ -11,9 +11,9 @@
     <header class="app-header">
         <div id="user-box">
             <div id="account-mount"></div>
-            <div id="user-info">
-                <p>Пользователь</p>
-                <p>Разработчик</p>
+            <div id="user-info" aria-live="polite">
+                <p id="user-name">Загрузка профиля…</p>
+                <p id="user-role"></p>
             </div>
             <div id="notifications-mount"></div>
         </div>
@@ -59,6 +59,6 @@
     </main>
 
     <script src="script.js"></script>
-    <script src="../main_script.js"></script>
+    <script src="../main_script.js?v=profile-1"></script>
 </body>
 </html>

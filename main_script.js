@@ -61,3 +61,39 @@ const loadSharedComponent = (mountSelector, fileName, toggleSelector, panelSelec
 
 loadSharedComponent("#account-mount", "account.html", "#user-icon", "#account-manage");
 loadSharedComponent("#notifications-mount", "notifications.html", "#notification-btn", "#notification-box");
+
+async function loadUserProfile() {
+    const nameElement = document.querySelector("#user-name");
+    const roleElement = document.querySelector("#user-role");
+
+    if (!nameElement || !roleElement) {
+        return;
+    }
+
+    const roleNames = new Map([
+        ["Developer", "Разработчик"],
+        ["QA", "Тестировщик"]
+    ]);
+
+    try {
+        const response = await fetch("/api/auth/me", { cache: "no-store" });
+
+        if (response.status === 401) {
+            window.location.replace("/autoriztion/autorization.html");
+            return;
+        }
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const profile = await response.json();
+        nameElement.textContent = profile.name;
+        roleElement.textContent = roleNames.get(profile.role) ?? profile.role;
+    } catch {
+        nameElement.textContent = "Не удалось загрузить профиль";
+        roleElement.textContent = "";
+    }
+}
+
+loadUserProfile();
