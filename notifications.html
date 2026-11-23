@@ -1,0 +1,62 @@
+<button id="notification-btn" class="button notification-toggle" type="button" aria-controls="notification-box" aria-expanded="false" aria-label="Уведомления">
+    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M17.5 32.8125C18.5637 32.8114 19.604 32.5006 20.4939 31.9178C21.3837 31.3351 22.0846 30.5058 22.5107 29.5312H12.4893C12.9154 30.5058 13.6163 31.3351 14.5061 31.9178C15.396 32.5006 16.4363 32.8114 17.5 32.8125V32.8125Z" fill="var(--color-primary)"/>
+        <path d="M27.3438 19.6875V15.5497C27.3438 10.7324 25.4734 6.53584 20.7812 5.46875L20.2344 2.1875H14.7656L14.2188 5.46875C9.51016 6.53584 7.65625 10.716 7.65625 15.5497V19.6875L4.375 24.0625V27.3438H30.625V24.0625L27.3438 19.6875Z" fill="var(--color-primary)"/>
+    </svg>
+</button>
+
+<div id="notification-box" role="region" aria-label="Уведомления" aria-hidden="true" inert>
+    <div class="notification">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 13.3333V20M20 26.6667H20.0167M35 20C35 28.2843 28.2843 35 20 35C11.7157 35 5 28.2843 5 20C5 11.7157 11.7157 5 20 5C28.2843 5 35 11.7157 35 20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-error)"/>
+        </svg>
+        <div id="reject" class="not-info">
+            <p>Ваше решение по тикету отклонено</p>
+            <div>
+                <a href="#">Подробнее</a>
+                <p>13.04 23:47</p>
+            </div>
+        </div>
+    </div>
+    <div class="not-line"></div>
+    <div class="notification">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M13.3333 20H13.35M20 20H20.0167M26.6667 20H26.6833M35 20C35 27.3638 28.2843 33.3333 20 33.3333C17.4346 33.3333 15.0195 32.7608 12.9078 31.7517L5 33.3333L7.32498 27.1333C5.85261 25.0705 5 22.6238 5 20C5 12.6362 11.7157 6.66663 20 6.66663C28.2843 6.66663 35 12.6362 35 20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-neutral)"/>
+        </svg>
+        <div id="new-msg" class="not-info">
+            <p>Новое сообщение в чате</p>
+            <div>
+                <a href="#">Подробнее</a>
+                <p>13.04 23:47</p>
+            </div>
+        </div>
+    </div>
+    <div class="not-line"></div>
+    <div class="notification">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14.9999 20L18.3332 23.3333L24.9999 16.6667M13.0578 7.82841C14.2537 7.73298 15.389 7.26272 16.3021 6.48458C18.4329 4.66871 21.5669 4.66871 23.6977 6.48458C24.6108 7.26272 25.7461 7.73298 26.942 7.82841C29.7327 8.05111 31.9488 10.2672 32.1715 13.0579C32.2669 14.2538 32.7372 15.3891 33.5153 16.3022C35.3312 18.433 35.3312 21.567 33.5153 23.6978C32.7372 24.6109 32.2669 25.7462 32.1715 26.9421C31.9488 29.7328 29.7327 31.9489 26.942 32.1716C25.7461 32.267 24.6108 32.7373 23.6977 33.5154C21.5669 35.3313 18.4329 35.3313 16.3021 33.5154C15.389 32.7373 14.2537 32.267 13.0578 32.1716C10.2671 31.9489 8.05099 29.7328 7.82829 26.9421C7.73286 25.7462 7.2626 24.6109 6.48446 23.6978C4.66859 21.567 4.66859 18.433 6.48446 16.3022C7.2626 15.3891 7.73286 14.2538 7.82829 13.0579C8.05099 10.2672 10.2671 8.05111 13.0578 7.82841Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-success)"/>
+        </svg>
+        <div id="accepted" class="not-info">
+            <p>Решение принято</p>
+            <div>
+                <a href="#">Подробнее</a>
+                <p>13.04 23:47</p>
+            </div>
+        </div>
+    </div>
+    <div class="not-line"></div>
+    <div class="notification">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 13.3333V20L25 25M35 20C35 28.2843 28.2843 35 20 35C11.7157 35 5 28.2843 5 20C5 11.7157 11.7157 5 20 5C28.2843 5 35 11.7157 35 20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-warning)"/>
+        </svg>
+        <div id="request" class="not-info">
+            <p>Решение принято</p>
+            <div>
+                <a href="#">Подробнее</a>
+                <p>13.04 23:47</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

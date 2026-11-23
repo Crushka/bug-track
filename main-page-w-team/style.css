@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 816px;
+    align-items: center;
+}
+
+main p {
+    font-size: 32px;
+    line-height: 16px;
+    color: var(--color-text);
+}
+
+#button-box {
+    display: flex;
+    gap: 26px;
+}
+
+#button-box :first-child {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+#button-box :last-child {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 14px 82px;
+}
+
+.team-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    width: 328px;
+    padding: 14px 82px;
+    border: 0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
