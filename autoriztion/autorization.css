@@ -1,5 +1,3 @@
-    @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +12,7 @@ body {
     min-height: 100vh;
     min-height: 100svh;
     padding: 2rem 1rem;
-    background-color: #F6F7FB;
+    background-color: var(--color-page);
 }
 
 header {
@@ -32,7 +30,7 @@ header svg {
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
     line-height: 2.8125rem;
-    color: #4F46E5;
+    color: var(--color-primary);
 }
 
 main {
@@ -40,9 +38,9 @@ main {
     width: min(100%, 28.0625rem);
     min-height: 34.625rem;
     padding: 3.125rem 3.5rem 0.5rem;
-    border: 0.25rem solid #E2E8F0;
+    border: 0.25rem solid var(--color-border);
     border-radius: 1.25rem;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     font-family: 'Balsamiq Sans', sans-serif;
 }
 
@@ -56,7 +54,7 @@ main {
 
 #auth-title {
     margin-bottom: 4.5rem;
-    color: #1E293B;
+    color: var(--color-text);
     font-size: 3rem;
     line-height: 4rem;
     text-align: center;
@@ -76,7 +74,7 @@ main {
 
 .form-field label {
     margin-bottom: 0.25rem;
-    color: #1E293B;
+    color: var(--color-text);
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -86,7 +84,7 @@ main {
     min-width: 0;
     height: 3rem;
     padding: 0.75rem 1rem;
-    border: 0.0625rem solid #94A3B8;
+    border: 0.0625rem solid var(--color-input-border);
     border-radius: 0.25rem;
     font: inherit;
 }
@@ -105,10 +103,10 @@ main {
     height: 3rem;
     margin-top: 5.625rem;
     padding: 0.75em 1.25em;
-    border: 0.125rem solid #4F46E5;
+    border: 0.125rem solid var(--color-primary);
     border-radius: 1.5em;
-    background-color: #4F46E5;
-    color: #FFFFFF;
+    background-color: var(--color-primary);
+    color: var(--color-white);
     cursor: pointer;
     font-family: inherit;
     font-size: 0.875rem;
@@ -125,8 +123,44 @@ main {
 }
 
 #auth-help a {
-    color: #64748B;
+    color: var(--color-muted);
     text-decoration: underline;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    width: max-content;
+    max-width: 260px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 4px solid var(--color-border);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+    z-index: 10;
+}
+
+.tooltip-container:hover .tooltip,
+.tooltip-container:focus-within .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
 }
 
 @media (max-width: 30rem) {

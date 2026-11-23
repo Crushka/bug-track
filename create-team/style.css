@@ -1,0 +1,92 @@
+#back {
+    display: flex;
+    flex-direction: row;
+    top: 84px;
+    left: 16px;
+    position: absolute;
+    width: 111px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 20px 12px 12px;
+    gap: 12px;
+    background-color: var(--color-white);
+    border-radius: 24px;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+
+#create-box {
+    display: flex;
+    flex-direction: column;
+    width: 515px;
+    align-items: center;
+}
+
+#project-name {
+    font-family: inherit;
+    width: 488px;
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--color-input-border);
+    margin-bottom: 39px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#desc {
+    font-family: inherit;
+    width: 488px;
+    height: 150px;
+    resize: none;
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--color-input-border);
+    margin-top: 18px;
+    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#code-input {
+    margin-top: 8px;
+    display: flex;
+    width: 108px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    padding: 4px 8px 4px 16px;
+    gap: 8px;
+    background-color: var(--color-white);
+}
+
+
+#code-input input {
+    font-family: inherit;
+    width: 59px;
+    height: 24px;
+    border: 0;
+    color: var(--color-primary);
+}
+
+#code-input input::placeholder {
+    color: var(--color-primary);
+}
+
+#continue {
+    display: flex;
+    border-radius: 24px;
+    border: 0;
+    background-color: var(--color-primary);
+    padding: 12px 20px;
+    gap: 12px;
+    margin-top: 49px;
+}
+
+#continue p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-white);
+}

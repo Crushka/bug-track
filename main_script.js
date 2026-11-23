@@ -1,57 +1,63 @@
-const notificationsMount = document.querySelector("#notifications-mount");
 const currentScript = document.currentScript;
 
-const initializeNotifications = (mount) => {
-    const notificationButton = mount.querySelector("#notification-btn");
-    const notificationBox = mount.querySelector("#notification-box");
+const initializePanel = (mount, toggleSelector, panelSelector) => {
+    const toggle = mount.querySelector(toggleSelector);
+    const panel = mount.querySelector(panelSelector);
 
-    if (!notificationButton || !notificationBox) return;
+    if (!toggle || !panel) return;
 
-    const setNotificationsOpen = (isOpen) => {
-        notificationBox.classList.toggle("is-open", isOpen);
-        notificationBox.setAttribute("aria-hidden", String(!isOpen));
-        notificationBox.inert = !isOpen;
-        notificationButton.setAttribute("aria-expanded", String(isOpen));
+    const setPanelOpen = (isOpen) => {
+        panel.classList.toggle("is-open", isOpen);
+        panel.setAttribute("aria-hidden", String(!isOpen));
+        panel.inert = !isOpen;
+        toggle.setAttribute("aria-expanded", String(isOpen));
     };
 
-    const closeNotifications = () => setNotificationsOpen(false);
+    const closePanel = () => setPanelOpen(false);
 
-    notificationButton.addEventListener("click", () => {
-        const isOpen = notificationBox.classList.contains("is-open");
-        setNotificationsOpen(!isOpen);
+    toggle.addEventListener("click", () => {
+        const isOpen = panel.classList.contains("is-open");
+        setPanelOpen(!isOpen);
     });
 
     document.addEventListener("click", (event) => {
-        const clickedInsideBox = notificationBox.contains(event.target);
-        const clickedButton = notificationButton.contains(event.target);
+        const clickedInsidePanel = panel.contains(event.target);
+        const clickedToggle = toggle.contains(event.target);
 
-        if (notificationBox.classList.contains("is-open") && !clickedInsideBox && !clickedButton) {
-            closeNotifications();
+        if (panel.classList.contains("is-open") && !clickedInsidePanel && !clickedToggle) {
+            closePanel();
         }
     });
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && notificationBox.classList.contains("is-open")) {
-            closeNotifications();
-            notificationButton.focus();
+        if (event.key === "Escape" && panel.classList.contains("is-open")) {
+            closePanel();
+            toggle.focus();
         }
     });
 };
 
-if (notificationsMount && currentScript) {
-    const notificationsUrl = new URL("notifications.html", currentScript.src);
+const loadSharedComponent = (mountSelector, fileName, toggleSelector, panelSelector) => {
+    const mount = document.querySelector(mountSelector);
+    if (!mount || !currentScript) return;
 
-    fetch(notificationsUrl, { cache: "no-store" })
+    const componentUrl = new URL(fileName, currentScript.src);
+    componentUrl.searchParams.set("refresh", Date.now().toString());
+
+    fetch(componentUrl, { cache: "no-store" })
         .then((response) => {
             if (!response.ok) {
-                throw new Error(`Unable to load notifications: ${response.status}`);
+                throw new Error(`Unable to load ${fileName}: ${response.status}`);
             }
 
             return response.text();
         })
         .then((markup) => {
-            notificationsMount.innerHTML = markup;
-            initializeNotifications(notificationsMount);
+            mount.innerHTML = markup;
+            initializePanel(mount, toggleSelector, panelSelector);
         })
         .catch((error) => console.error(error));
-}
+};
+
+loadSharedComponent("#account-mount", "account.html", "#user-icon", "#account-manage");
+loadSharedComponent("#notifications-mount", "notifications.html", "#notification-btn", "#notification-box");

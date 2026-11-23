@@ -1,22 +1,167 @@
-#notification-box {
-    position: absolute;
-    width: 438px;
-    height: max-content;
-    max-height: calc(100vh - 6rem);
-    max-height: calc(100svh - 6rem);
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+
+:root {
+    --color-primary: #4F46E5;
+    --color-primary-hover: #3388CA;
+    --color-primary-soft: #EEF2FF;
+    --color-text: #1E293B;
+    --color-neutral: #475569;
+    --color-muted: #64748B;
+    --color-white: #FFFFFF;
+    --color-page: #F6F7FB;
+    --color-border: #E2E8F0;
+    --color-input-border: #94A3B8;
+    --color-error: #B91C1C;
+    --color-success: #166534;
+    --color-warning: #92400E;
+    --color-status-draft: var(--color-neutral);
+    --color-status-draft-bg: #F1F5F9;
+    --color-status-progress: #1D4ED8;
+    --color-status-progress-bg: #EFF6FF;
+    --color-status-attention: var(--color-warning);
+    --color-status-attention-bg: #FEF3C7;
+    --color-status-fixed: var(--color-success);
+    --color-status-fixed-bg: #DCFCE7;
+    --color-status-critical: var(--color-error);
+    --color-status-critical-bg: #FEE2E2;
+}
+
+.app-page,
+.app-page * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body.app-page {
+    position: relative;
     display: flex;
     flex-direction: column;
-    border: 4px solid #E2E8F0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 2rem 1rem;
+    background-color: var(--color-page);
+    font-family: 'Balsamiq Sans', sans-serif;
+    overflow: hidden;
+}
+
+.app-header {
+    position: fixed;
+    top: -1px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 11px 12px;
+    background-color: var(--color-white);
+}
+
+.app-header #user-box {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    gap: 14px;
+}
+
+.app-header #account-mount {
+    display: flex;
+    align-items: center;
+}
+
+.app-header #user-info {
+    color: var(--color-text);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.app-header #logo {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    gap: 3px;
+    color: var(--color-primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.app-header .button {
+    display: flex;
+}
+
+.account-toggle {
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+#account-manage {
+    position: absolute;
+    top: 76px;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 4px solid var(--color-border);
+    border-radius: 16px;
+    background-color: var(--color-white);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition:
+        opacity 200ms ease-in-out,
+        transform 200ms ease-in-out,
+        visibility 0s linear 200ms;
+}
+
+#account-manage.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition:
+        opacity 200ms ease-in-out,
+        transform 200ms ease-in-out,
+        visibility 0s;
+}
+
+.account-logout {
+    display: block;
+    border-radius: 4px;
+    color: var(--color-error);
+    text-decoration: none;
+}
+
+.account-logout:hover {
+    background-color: var(--color-white);
+}
+
+#notification-box {
+    position: absolute;
+    width: 440px;
+    height: max-content;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--color-border);
     border-radius: 20px;
     top: 76px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     padding: 21px 18px;
     gap: 6px;
     align-items: center;
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-0.5rem);
+    transform: translateY(-8px);
     pointer-events: none;
     transition:
         opacity 200ms ease-in-out,
@@ -45,10 +190,11 @@
 
 .button {
     cursor: pointer;
+    z-index: 100;
 }
 
 .notification {
-    width: 380px;
+    width: 390px;
     flex: 0 0 auto;
     display: flex;
     gap: 3px;
@@ -57,7 +203,7 @@
 .not-line {
     width: 383px;
     flex: 0 0 auto;
-    border: 1px solid #E2E8F0;
+    border: 1px solid var(--color-border);
 }
 
 .not-info {
@@ -76,34 +222,28 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: #64748B;
+    color: var(--color-muted);
 }
 
 a {
     text-decoration: underline;
-    color: #64748B;
+    color: var(--color-muted);
 }
 
 #reject > :first-child {
-    color: #B91C1C;
+    color: var(--color-error);
 }
 
 #new-msg > :first-child {
-    color: #475569;
+    color: var(--color-neutral);
 }
 
 #accepted > :first-child {
-    color: #166534;
+    color: var(--color-success);
 }
 
 #request > :first-child {
-    color: #92400E;
+    color: var(--color-warning);
 }
 
-@media (prefers-reduced-motion: reduce) {
-    #notification-box,
-    #notification-box.is-open {
-        transition: none;
-    }
-}
 
