@@ -20,4 +20,22 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="../main-style.css;../main_script.js;../account.html;../notifications.html"
+          Link="wwwroot/%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../autoriztion/autorization.html;../autoriztion/autorization.css;../autoriztion/autorization.js"
+          Link="wwwroot/autoriztion/%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../main-page-w-team/index.html;../main-page-w-team/style.css"
+          Link="wwwroot/main-page-w-team/%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../create-team/index.html;../create-team/script.js;../create-team/style.css"
+          Link="wwwroot/create-team/%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="../join-team/index.html;../join-team/script.js;../join-team/style.css"
+          Link="wwwroot/join-team/%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+
 </Project>

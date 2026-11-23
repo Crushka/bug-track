@@ -18,18 +18,19 @@
     <main>
         <section class="auth" aria-labelledby="auth-title">
             <p id="auth-title">Авторизация</p>
-            <form action="/login" method="post" id="login-form">
+            <form action="/api/auth/login" method="post" id="login-form">
                 <div class="form-field" id="login-field">
                     <label for="login">Логин</label>
-                    <input type="text" name="login" id="login" placeholder="Введите логин" required>
+                    <input type="text" name="login" id="login" placeholder="Введите логин" autocomplete="username" required>
                 </div>
 
                 <div class="form-field" id="pass-form">
                     <label for="password">Пароль</label>
-                    <input type="password" name="password" id="password" placeholder="Введите пароль" min="8" max="24" required>
+                    <input type="password" name="password" id="password" placeholder="Введите пароль" autocomplete="current-password" min="8" max="24" required>
                 </div>
 
                 <button type="submit" id="sign-btn">Войти</button>
+                <p id="login-error" aria-live="polite"></p>
             </form>
 
             <div id="auth-help">

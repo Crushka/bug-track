@@ -201,3 +201,12 @@ main {
         line-height: 2.5rem;
     }
 }
+
+#login-error {
+    color: #a61b1b;
+    text-align: center;
+}
+
+#login-error:not(:empty) {
+    margin-top: 0.75rem;
+}
