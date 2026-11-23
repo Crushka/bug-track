@@ -1,0 +1,47 @@
+Date : 2026-11-23 16:29:12
+Directory : e:\bugtrack-front
+Total : 16 files,  995 codes, 0 comments, 140 blanks, all 1135 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          5 |        622 |          0 |         91 |        713 |
+| HTML       |          6 |        265 |          0 |         19 |        284 |
+| JavaScript |          5 |        108 |          0 |         30 |        138 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                               |         16 |        995 |          0 |        140 |      1,135 |
+| . (Files)                                       |          4 |        337 |          0 |         53 |        390 |
+| autoriztion                                     |          3 |        224 |          0 |         36 |        260 |
+| create-team                                     |          3 |        237 |          0 |         28 |        265 |
+| join-team                                       |          3 |        122 |          0 |         14 |        136 |
+| main-page-w-team                                |          3 |         75 |          0 |          9 |         84 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\bugtrack-front\account.html                  | HTML       |          9 |          0 |          4 |         13 |
+| e:\bugtrack-front\autoriztion\autorization.css  | PostCSS    |        175 |          0 |         29 |        204 |
+| e:\bugtrack-front\autoriztion\autorization.html | HTML       |         44 |          0 |          4 |         48 |
+| e:\bugtrack-front\autoriztion\autorization.js   | JavaScript |          5 |          0 |          3 |          8 |
+| e:\bugtrack-front\create-team\index.html        | HTML       |         62 |          0 |          3 |         65 |
+| e:\bugtrack-front\create-team\script.js         | JavaScript |         53 |          0 |         11 |         64 |
+| e:\bugtrack-front\create-team\style.css         | PostCSS    |        122 |          0 |         14 |        136 |
+| e:\bugtrack-front\join-team\index.html          | HTML       |         54 |          0 |          2 |         56 |
+| e:\bugtrack-front\join-team\script.js           | JavaScript |          0 |          0 |          1 |          1 |
+| e:\bugtrack-front\join-team\style.css           | PostCSS    |         68 |          0 |         11 |         79 |
+| e:\bugtrack-front\main-page-w-team\index.html   | HTML       |         37 |          0 |          2 |         39 |
+| e:\bugtrack-front\main-page-w-team\script.js    | JavaScript |          0 |          0 |          1 |          1 |
+| e:\bugtrack-front\main-page-w-team\style.css    | PostCSS    |         38 |          0 |          6 |         44 |
+| e:\bugtrack-front\main-style.css                | PostCSS    |        219 |          0 |         31 |        250 |
+| e:\bugtrack-front\main_script.js                | JavaScript |         50 |          0 |         14 |         64 |
+| e:\bugtrack-front\notifications.html            | HTML       |         59 |          0 |          4 |         63 |
+| Total                                           |            |        995 |          0 |        140 |      1,135 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
