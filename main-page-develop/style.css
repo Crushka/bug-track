@@ -304,12 +304,14 @@ main {
     text-decoration: underline;
 }
 
-#chat-file-error {
+#chat-file-error,
+#chat-send-error {
     color: var(--color-error);
     font-size: 12px;
 }
 
-#chat-file-error:empty {
+#chat-file-error:empty,
+#chat-send-error:empty {
     display: none;
 }
 
@@ -336,4 +338,9 @@ main {
     border: 0;
     background: transparent;
     color: var(--color-primary);
+}
+
+#send-btn:disabled {
+    opacity: 0.5;
+    cursor: wait;
 }
