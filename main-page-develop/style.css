@@ -1,0 +1,339 @@
+body.app-page {
+    justify-content: flex-start;
+    padding-block: 90px 24px;
+    overflow: auto;
+}
+
+main {
+    width: 1090px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+#head-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#head-section > :first-child h1 {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 400;
+    width: 376px;
+    color: var(--color-text);
+}
+
+#head-section > :first-child p {
+    color: var(--color-muted);
+    line-height: 24px;
+}
+
+#head-section > :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#head-section > :last-child h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--color-text);
+}
+
+#head-section > :last-child p {
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-muted);
+}
+
+#main-section {
+    display: flex;
+    width: 100%;
+    gap: 34px;
+}
+
+#ticket-zone {
+    width: 682px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.tickets-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+    gap: 16px;
+    width: 328px;
+    height: 136px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
+    cursor: pointer;
+}
+
+.ticket-name {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+.ticket-owner {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-muted);
+}
+
+.ticket-desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-muted);
+}
+
+
+#border-line {
+    height: 773px;
+    width: 0;
+    border: 1px solid var(--color-border);
+}
+
+#chat-zone {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    width: 311px;
+    height: 589px;
+    border: 2px solid var(--color-border);
+    border-radius: 15px;
+}
+
+#chat-head {
+    flex-shrink: 0;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 58px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 2px solid var(--color-border);
+}
+
+#chat-icon {
+    position: relative;
+    width: 48px;
+    height: 30px;
+}
+
+#chat-icon > :first-child {
+    position: absolute;
+}
+
+#chat-icon > :last-child {
+    position: absolute;
+    left: 14px;
+}
+
+#chat-info > :first-child {
+    font-size: 12px;
+    color: var(--color-text);
+    margin: 0;
+}
+
+#chat-info > :last-child {
+    font-size: 10px;
+    color: var(--color-muted);
+    margin: 0;
+}
+
+#messages {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+}
+
+.chat-message-row {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.chat-message-row--incoming {
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.chat-message-avatar {
+    flex-shrink: 0;
+}
+
+.chat-read-status {
+    order: -1;
+    flex-shrink: 0;
+    color: var(--color-text);
+}
+
+.chat-message {
+    position: relative;
+    flex-shrink: 0;
+    align-self: flex-start;
+    max-width: 75%;
+    padding: 8px 10px;
+    border-radius: 15px 15px 15px 4px;
+    background-color: var(--color-border);
+    color: var(--color-text);
+    font-size: 12px;
+    line-height: 18px;
+    overflow-wrap: anywhere;
+}
+
+.chat-message-author {
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid currentColor;
+    font-weight: 700;
+}
+
+.chat-message-text {
+    white-space: pre-wrap;
+}
+
+.chat-message-files {
+    padding: 0;
+    list-style: none;
+}
+
+.chat-message-text:not([hidden]) + .chat-message-files {
+    margin-top: 4px;
+}
+
+.chat-message-files a {
+    color: inherit;
+}
+
+.chat-message::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.chat-message--outgoing {
+    border-radius: 15px 15px 4px 15px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.chat-message--outgoing::after {
+    left: auto;
+    right: -6px;
+    transform: scaleX(-1);
+}
+
+#chat-input {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: 12px 13px;
+    gap: 8px;
+    width: 100%;
+    min-height: 50px;
+    border-top: 2px solid var(--color-border);
+    border-radius: 0 0 15px 15px;
+    background-color: var(--color-white);
+}
+
+.chat-input-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#chat-attachments:not([hidden]) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+}
+
+#chat-file-names {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+#clear-chat-files {
+    flex-shrink: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-primary);
+    font: inherit;
+    text-decoration: underline;
+}
+
+#chat-file-error {
+    color: var(--color-error);
+    font-size: 12px;
+}
+
+#chat-file-error:empty {
+    display: none;
+}
+
+#message {
+    flex: 1;
+    min-width: 0;
+    height: 20px;
+    max-height: 40px;
+    padding: 0;
+    border: 0;
+    resize: none;
+    overflow-y: auto;
+    font: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-text);
+}
+
+#attach-btn,
+#send-btn {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-primary);
+}

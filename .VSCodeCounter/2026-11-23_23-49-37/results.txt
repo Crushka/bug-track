@@ -1,0 +1,51 @@
+Date : 2026-11-23 23:49:37
+Directory : e:\bugtrack-front
+Total : 19 files,  1427 codes, 0 comments, 192 blanks, all 1619 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          6 |        853 |          0 |        131 |        984 |
+| HTML       |          7 |        427 |          0 |         20 |        447 |
+| JavaScript |          6 |        147 |          0 |         41 |        188 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                               |         19 |      1,427 |          0 |        192 |      1,619 |
+| . (Files)                                       |          4 |        336 |          0 |         53 |        389 |
+| autoriztion                                     |          3 |        224 |          0 |         36 |        260 |
+| create-team                                     |          3 |        237 |          0 |         28 |        265 |
+| join-team                                       |          3 |        127 |          0 |         16 |        143 |
+| main-page-develop                               |          3 |        428 |          0 |         48 |        476 |
+| main-page-w-team                                |          3 |         75 |          0 |         11 |         86 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\bugtrack-front\account.html                  | HTML       |          9 |          0 |          4 |         13 |
+| e:\bugtrack-front\autoriztion\autorization.css  | PostCSS    |        175 |          0 |         29 |        204 |
+| e:\bugtrack-front\autoriztion\autorization.html | HTML       |         44 |          0 |          4 |         48 |
+| e:\bugtrack-front\autoriztion\autorization.js   | JavaScript |          5 |          0 |          3 |          8 |
+| e:\bugtrack-front\create-team\index.html        | HTML       |         62 |          0 |          3 |         65 |
+| e:\bugtrack-front\create-team\script.js         | JavaScript |         53 |          0 |         11 |         64 |
+| e:\bugtrack-front\create-team\style.css         | PostCSS    |        122 |          0 |         14 |        136 |
+| e:\bugtrack-front\join-team\index.html          | HTML       |         54 |          0 |          2 |         56 |
+| e:\bugtrack-front\join-team\script.js           | JavaScript |          5 |          0 |          3 |          8 |
+| e:\bugtrack-front\join-team\style.css           | PostCSS    |         68 |          0 |         11 |         79 |
+| e:\bugtrack-front\main-page-develop\index.html  | HTML       |        162 |          0 |          1 |        163 |
+| e:\bugtrack-front\main-page-develop\script.js   | JavaScript |         34 |          0 |          9 |         43 |
+| e:\bugtrack-front\main-page-develop\style.css   | PostCSS    |        232 |          0 |         38 |        270 |
+| e:\bugtrack-front\main-page-w-team\index.html   | HTML       |         37 |          0 |          2 |         39 |
+| e:\bugtrack-front\main-page-w-team\script.js    | JavaScript |          0 |          0 |          1 |          1 |
+| e:\bugtrack-front\main-page-w-team\style.css    | PostCSS    |         38 |          0 |          8 |         46 |
+| e:\bugtrack-front\main-style.css                | PostCSS    |        218 |          0 |         31 |        249 |
+| e:\bugtrack-front\main_script.js                | JavaScript |         50 |          0 |         14 |         64 |
+| e:\bugtrack-front\notifications.html            | HTML       |         59 |          0 |          4 |         63 |
+| Total                                           |            |      1,427 |          0 |        192 |      1,619 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
