@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница тестировщика — BugTrack</title>
+    <link rel="stylesheet" href="../main-style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page qa-page">
+    <header class="app-header">
+        <div id="user-box">
+            <div id="account-mount" data-account-icon="qa-icon"></div>
+            <div id="user-info">
+                <p>Пользователь</p>
+                <p>Тестировщик</p>
+            </div>
+            <div id="notifications-mount"></div>
+        </div>
+        <div id="logo">
+            <span>BugTrack</span>
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43.125 27.3242V24.4492H35.9375V19.3344C38.5807 16.8232 38.8125 13.5161 38.8125 10.0625V8.625H35.9375V10.0625C35.9375 12.5781 35.7704 14.3885 35.048 15.7981C33.0625 11.5 29.1381 10.0625 23 10.0625C19.4242 10.0625 16.2446 10.6968 13.977 12.2475C12.6383 13.163 11.7129 14.4855 11.0391 15.8161C10.2422 14.4262 10.0625 12.6518 10.0625 10.0625V8.625H7.1875V10.0625C7.1875 13.4262 7.4202 16.6534 10.0625 19.1547V24.4492H2.875V27.3242L10.0625 27.3125C10.0625 29.0195 10.3949 32.0823 10.996 33.5737C8.67891 35.6464 7.1875 37.9419 7.1875 41.6875V43.125H10.0625V41.6875C10.0625 39.2024 10.8801 37.6706 12.4137 36.1783C14.375 40.25 15.9023 41.6875 21.5625 41.6875V15.8125H24.4375V41.6875C30.2773 41.6875 31.625 40.25 33.5863 36.1783C35.1199 37.6706 35.9375 39.2033 35.9375 41.6875V43.125H38.8125V41.6875C38.8125 37.9428 37.3211 35.6473 35.004 33.5737C35.6051 32.0823 35.9375 29.0195 35.9375 27.3125L43.125 27.3242Z" fill="var(--color-primary)"/>
+                <path d="M23 2.875C18.6821 2.875 14.375 2.875 14.375 10.4219C16.7217 9.16406 19.7072 8.625 23 8.625C25.1643 8.625 27.1409 8.86309 28.8749 9.34375C29.8407 9.61328 31.0904 10.1263 31.625 10.4219C31.625 2.875 27.3179 2.875 23 2.875Z" fill="var(--color-primary)"/>
+            </svg>
+        </div>
+    </header>
+
+    <main class="qa-layout">
+        <div class="qa-greeting">
+            <h1>Приветствую,<br>Пользователь!</h1>
+            <p>Тестировщик</p>
+        </div>
+
+        <div class="qa-projects">
+            <section class="qa-project-column" aria-labelledby="assigned-projects-title">
+                <div class="qa-projects-heading">
+                    <h2 id="assigned-projects-title">Проекты, которые вы тестируете</h2>
+                </div>
+                <ul class="qa-project-grid qa-project-grid--assigned">
+                    <li class="qa-project-card qa-project-card--linked">
+                        <a class="qa-project-link" href="../project-w-r/index.html" aria-labelledby="profile-project-title">
+                            <div>
+                                <h3 id="profile-project-title">Личный кабинет</h3>
+                                <p>3 разработчика</p>
+                            </div>
+                            <p>Профиль пользователя и настройки аккаунта.</p>
+                        </a>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Командный чат</h3>
+                            <p>2 разработчика</p>
+                        </div>
+                        <p>Переписка команды и обмен вложениями.</p>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Доска задач</h3>
+                            <p>4 разработчика</p>
+                        </div>
+                        <p>Тикеты, фильтры и статусы задач.</p>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Уведомления</h3>
+                            <p>2 разработчика</p>
+                        </div>
+                        <p>Оповещения о новых сообщениях и правках.</p>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Приглашения в команду</h3>
+                            <p>1 разработчик</p>
+                        </div>
+                        <p>Создание кодов и вход по приглашению.</p>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Поиск по проектам</h3>
+                            <p>3 разработчика</p>
+                        </div>
+                        <p>Поиск проектов по названию и участнику.</p>
+                    </li>
+                </ul>
+                <div class="qa-projects-actions">
+                    <button class="ticket-more" type="button" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Показать ещё</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="qa-project-column qa-project-column--available" aria-labelledby="available-projects-title">
+                <div class="qa-projects-heading">
+                    <h2 id="available-projects-title">Проекты без тестировщика</h2>
+                    <p>Возьмите эти проекты в свои руки!</p>
+                </div>
+                <ul class="qa-project-grid">
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Календарь релизов</h3>
+                            <p>2 разработчика</p>
+                        </div>
+                        <p>Планирование дат и просмотр ближайших релизов.</p>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Отчёты по багам</h3>
+                            <p>3 разработчика</p>
+                        </div>
+                        <p>Статистика по приоритетам и статусам тикетов.</p>
+                    </li>
+                    <li class="qa-project-card">
+                        <div>
+                            <h3>Журнал действий</h3>
+                            <p>1 разработчик</p>
+                        </div>
+                        <p>История изменений в проектах команды.</p>
+                    </li>
+                </ul>
+                <div class="qa-projects-actions">
+                    <button class="ticket-more" type="button" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Показать ещё</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../main_script.js"></script>
+</body>
+</html>

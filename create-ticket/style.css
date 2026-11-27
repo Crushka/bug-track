@@ -1,0 +1,297 @@
+body.app-page.create-ticket-page {
+    display: block;
+    overflow: auto;
+}
+
+.create-ticket-page .app-header #user-box {
+    gap: 10px;
+}
+
+.create-ticket-page .app-header #user-info {
+    min-width: 79px;
+}
+
+.create-ticket-page #user-info > :last-child {
+    color: var(--color-muted);
+    font-size: 10px;
+}
+
+.create-ticket-page #notifications-mount {
+    margin-left: 10px;
+}
+
+.ticket-layout {
+    display: flex;
+    width: 1440px;
+    min-height: 1024px;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 85px 35px 32px 17px;
+}
+
+.ticket-back,
+.ticket-deadline-control {
+    display: inline-flex;
+    width: max-content;
+    height: 48px;
+    align-items: center;
+    gap: 8px;
+    padding-inline: 12px 16px;
+    border: 2px solid var(--color-primary);
+    border-radius: 24px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.ticket-back:hover,
+.ticket-deadline-control:hover {
+    background-color: var(--color-primary-soft);
+}
+
+.ticket-form {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 440px 1fr;
+    grid-template-rows: 1fr auto;
+    margin-top: 8px;
+}
+
+.ticket-fields {
+    display: flex;
+    grid-row: 1 / span 2;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 33px;
+    padding: 25px 0 20px 46px;
+    border-right: 1px solid var(--color-border);
+}
+
+.ticket-field {
+    display: grid;
+    width: 328px;
+    gap: 3px;
+    color: var(--color-text);
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ticket-required {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.ticket-control {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 15px;
+    border: 1px solid var(--color-input-border);
+    border-radius: 4px;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font: 16px/24px "Balsamiq Sans", sans-serif;
+}
+
+.ticket-control::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
+}
+
+#ticket-description {
+    height: 233px;
+    resize: none;
+}
+
+.ticket-field--steps {
+    width: 366px;
+    margin-top: 14px;
+}
+
+.ticket-steps-row {
+    display: flex;
+    min-height: 69px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.ticket-step-add,
+.ticket-step-confirm,
+.ticket-attach,
+.ticket-submit {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.ticket-step-add {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 auto;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+#ticket-step-editor:not([hidden]) {
+    display: flex;
+    gap: 8px;
+}
+
+#ticket-step {
+    min-width: 0;
+}
+
+.ticket-step-confirm {
+    padding-inline: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+#ticket-priority {
+    width: 120px;
+}
+
+.ticket-field--deadline {
+    margin-top: 12px;
+}
+
+.ticket-deadline-control {
+    position: relative;
+    min-width: 185px;
+}
+
+.ticket-deadline-control:focus-within {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+#ticket-deadline {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#ticket-deadline::-webkit-calendar-picker-indicator {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ticket-attachments {
+    padding: 25px 0 0 41px;
+}
+
+.ticket-attachments h2 {
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.ticket-chip-list {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    list-style: none;
+}
+
+.ticket-chip-list:empty,
+#ticket-form-error:empty {
+    display: none;
+}
+
+#ticket-file-list {
+    margin-top: 16px;
+}
+
+.ticket-chip {
+    display: inline-flex;
+    max-width: 100%;
+    min-height: 32px;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 8px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-size: 14px;
+    line-height: 24px;
+    overflow-wrap: anywhere;
+}
+
+.ticket-chip svg {
+    flex: 0 0 auto;
+}
+
+#ticket-step-list .ticket-chip {
+    border-radius: 16px;
+    background-color: var(--color-primary-soft);
+}
+
+.ticket-chip button {
+    padding: 0 2px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.ticket-attach {
+    width: auto;
+    margin-top: 20px;
+}
+
+.ticket-form-actions {
+    display: flex;
+    grid-column: 2;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    padding-top: 24px;
+}
+
+#ticket-form-error,
+#ticket-file-error {
+    color: var(--color-error);
+    font-size: 14px;
+}
+
+#ticket-file-error:not(:empty) {
+    margin-top: 8px;
+}
+
+.ticket-submit {
+    width: 328px;
+    height: 48px;
+    flex: 0 0 auto;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ticket-submit:hover {
+    border-color: var(--color-primary-hover);
+    background-color: var(--color-primary-hover);
+}

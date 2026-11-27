@@ -1,9 +1,26 @@
-<button id="user-icon" class="button account-toggle" type="button" aria-controls="account-manage" aria-expanded="false" aria-label="Аккаунт">
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<button id="user-icon" class="button account-toggle" type="button" aria-controls="account-manage" aria-expanded="false" aria-label="Аккаунт"></button>
+
+<template id="account-avatars">
+    <svg id="developer-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M0 24C0 10.752 10.752 0 24 0C37.248 0 48 10.752 48 24C48 37.248 37.248 48 24 48C10.752 48 0 37.248 0 24Z" fill="var(--color-muted)"/>
         <path d="M23.4 7.5C27.384 7.5 30.6 10.716 30.6 14.7C30.6 18.684 27.384 21.9 23.4 21.9C19.416 21.9 16.2 18.684 16.2 14.7C16.2 10.716 19.416 7.5 23.4 7.5ZM23.4 41.58C17.4 41.58 12.096 38.508 9 33.852C9.072 29.076 18.6 26.46 23.4 26.46C28.176 26.46 37.728 29.076 37.8 33.852C34.704 38.508 29.4 41.58 23.4 41.58Z" fill="var(--color-white)"/>
     </svg>
-</button>
+    <svg id="qa-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g clip-path="url(#qa-avatar-clip)">
+            <path d="M0 24C0 10.752 10.752 0 24 0C37.248 0 48 10.752 48 24C48 37.248 37.248 48 24 48C10.752 48 0 37.248 0 24Z" fill="var(--color-muted)"/>
+            <path d="M23.4 7.5C27.384 7.5 30.6 10.716 30.6 14.7C30.6 18.684 27.384 21.9 23.4 21.9C19.416 21.9 16.2 18.684 16.2 14.7C16.2 10.716 19.416 7.5 23.4 7.5Z" fill="var(--color-white)"/>
+            <path d="M9 33.852C9.072 29.076 18.6 26.46 23.4 26.46C28.176 26.46 37.728 29.076 37.8 33.852C34.704 38.508 29.4 41.58 23.4 41.58C17.4 41.58 12.096 38.508 9 33.852Z" fill="var(--color-white)"/>
+            <path d="M22.1499 15.1C22.1499 16.3426 21.1425 17.35 19.8999 17.35C18.6573 17.35 17.6499 16.3426 17.6499 15.1C17.6499 13.8573 18.6573 12.85 19.8999 12.85C21.1425 12.85 22.1499 13.8573 22.1499 15.1Z" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-muted)"/>
+            <path d="M29.1499 15.1C29.1499 16.3426 28.1425 17.35 26.8999 17.35C25.6573 17.35 24.6499 16.3426 24.6499 15.1C24.6499 13.8573 25.6573 12.85 26.8999 12.85C28.1425 12.85 29.1499 13.8573 29.1499 15.1Z" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-muted)"/>
+            <path d="M22.1499 15.1H24.6499" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-muted)"/>
+        </g>
+        <defs>
+            <clipPath id="qa-avatar-clip">
+                <rect width="48" height="48" fill="var(--color-white)"/>
+            </clipPath>
+        </defs>
+    </svg>
+</template>
 
 <section id="account-manage" role="region" aria-label="Управление аккаунтом" aria-hidden="true" inert>
     <a class="account-logout" href="../autoriztion/autorization.html">Выйти из аккаунта</a>

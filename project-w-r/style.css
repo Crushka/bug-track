@@ -1,0 +1,249 @@
+body.app-page.project-page {
+    display: block;
+    overflow: auto;
+}
+
+.project-page .app-header #user-box {
+    gap: 10px;
+}
+
+.project-page .app-header #user-info {
+    min-width: 79px;
+}
+
+.project-page #user-info > :last-child {
+    color: var(--color-muted);
+    font-size: 10px;
+}
+
+.project-page #notifications-mount {
+    margin-left: 10px;
+}
+
+.project-svg-defs {
+    position: absolute;
+}
+
+.project-layout {
+    display: flex;
+    width: 1440px;
+    min-height: 1024px;
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 112px 35px 32px 61px;
+}
+
+.project-details {
+    width: 1319px;
+}
+
+.project-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 10px 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-heading h1 {
+    color: var(--color-text);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.project-back {
+    display: inline-flex;
+    width: 188px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid var(--color-primary);
+    border-radius: 24px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.project-back:hover {
+    background-color: var(--color-primary-soft);
+}
+
+.project-description {
+    min-height: 72px;
+    margin: 23px 40px 0 29px;
+    color: var(--color-text);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 492px 683px;
+    gap: 46px;
+    margin: 32px 0 0 10px;
+}
+
+.project-content h2 {
+    color: var(--color-muted);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.project-team-group + .project-team-group {
+    margin-top: 20px;
+}
+
+.project-member,
+.project-member-list {
+    margin-top: 8px;
+}
+
+.project-member-list {
+    display: grid;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-member {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 3px;
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.project-member-list .project-member {
+    margin-top: 0;
+}
+
+.project-repository {
+    margin-top: 32px;
+}
+
+.project-repository p {
+    margin: 4px 0 0 19px;
+    color: var(--color-muted);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.project-ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 328px);
+    align-items: start;
+    gap: 16px 27px;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-ticket {
+    display: flex;
+    min-height: 136px;
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-white);
+    overflow-wrap: anywhere;
+}
+
+.project-ticket--review {
+    min-height: 153px;
+}
+
+.project-ticket h3 {
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.project-ticket p {
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.project-ticket .project-ticket-status {
+    color: var(--color-warning);
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.project-tickets-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.project-tickets-actions .ticket-more:disabled {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    cursor: default;
+    font-family: inherit;
+}
+
+.project-reservation {
+    align-self: flex-end;
+    margin-top: auto;
+    padding-top: 40px;
+    color: var(--color-muted);
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.project-reservation-status {
+    margin-bottom: 6px;
+}
+
+.project-reservation-status--active {
+    width: 200px;
+}
+
+.project-reservation-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.project-reservation-button {
+    width: 328px;
+    height: 48px;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.project-reservation-button--outline {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.project-reservation-button--leave {
+    width: 200px;
+}
+
+.project-reservation-button:not(:disabled) {
+    cursor: pointer;
+}
+
+.project-create-ticket {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}

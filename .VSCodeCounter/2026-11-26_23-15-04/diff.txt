@@ -1,0 +1,44 @@
+Date : 2026-11-26 23:15:04
+Directory : e:\bugtrack-front
+Total : 13 files,  704 codes, 0 comments, 94 blanks, all 798 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          5 |        348 |          0 |         66 |        414 |
+| HTML       |          4 |        303 |          0 |         15 |        318 |
+| JavaScript |          4 |         53 |          0 |         13 |         66 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                           | files      | code       | comment    | blank      | total      |
++------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                              |         13 |        704 |          0 |         94 |        798 |
+| . (Files)                                      |          3 |         46 |          0 |          6 |         52 |
+| main-page-QA                                   |          2 |        260 |          0 |         31 |        291 |
+| main-page-develop                              |          3 |         28 |          0 |          0 |         28 |
+| project-w-r                                    |          3 |        354 |          0 |         53 |        407 |
+| team-page                                      |          2 |         16 |          0 |          4 |         20 |
++------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                       | language   | code       | comment    | blank      | total      |
++------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\bugtrack-front\account.html                 | HTML       |         16 |          0 |          1 |         17 |
+| e:\bugtrack-front\main-page-QA\index.html      | HTML       |        134 |          0 |          5 |        139 |
+| e:\bugtrack-front\main-page-QA\style.css       | PostCSS    |        126 |          0 |         26 |        152 |
+| e:\bugtrack-front\main-page-develop\index.html | HTML       |         16 |          0 |         -2 |         14 |
+| e:\bugtrack-front\main-page-develop\script.js  | JavaScript |          7 |          0 |          1 |          8 |
+| e:\bugtrack-front\main-page-develop\style.css  | PostCSS    |          5 |          0 |          1 |          6 |
+| e:\bugtrack-front\main-style.css               | PostCSS    |         20 |          0 |          2 |         22 |
+| e:\bugtrack-front\main_script.js               | JavaScript |         10 |          0 |          3 |         13 |
+| e:\bugtrack-front\project-w-r\index.html       | HTML       |        137 |          0 |         11 |        148 |
+| e:\bugtrack-front\project-w-r\script.js        | JavaScript |         12 |          0 |          4 |         16 |
+| e:\bugtrack-front\project-w-r\style.css        | PostCSS    |        205 |          0 |         38 |        243 |
+| e:\bugtrack-front\team-page\script.js          | JavaScript |         24 |          0 |          5 |         29 |
+| e:\bugtrack-front\team-page\style.css          | PostCSS    |         -8 |          0 |         -1 |         -9 |
+| Total                                          |            |        704 |          0 |         94 |        798 |
++------------------------------------------------+------------+------------+------------+------------+------------+

@@ -13,6 +13,14 @@ const sendButton = document.querySelector("#send-btn");
 const sendError = document.querySelector("#chat-send-error");
 const chatId = new URLSearchParams(window.location.search).get("chatId")?.trim();
 
+if (chatId) {
+    for (const link of document.querySelectorAll(".tickets-more-slot .ticket-more")) {
+        const url = new URL(link.href);
+        url.searchParams.set("chatId", chatId);
+        link.href = url.href;
+    }
+}
+
 let selectedFiles = [];
 
 function renderSelectedFiles() {

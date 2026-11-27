@@ -37,7 +37,19 @@ const initializePanel = (mount, toggleSelector, panelSelector) => {
     });
 };
 
-const loadSharedComponent = (mountSelector, fileName, toggleSelector, panelSelector) => {
+const setAccountIcon = (mount) => {
+    const button = mount.querySelector("#user-icon");
+    const icons = mount.querySelector("#account-avatars")?.content;
+    if (!button || !icons) return;
+
+    const defaultIconId = "developer-icon";
+    const iconId = mount.dataset.accountIcon || defaultIconId;
+    const icon = icons.getElementById(iconId) || icons.getElementById(defaultIconId);
+
+    if (icon) button.replaceChildren(icon.cloneNode(true));
+};
+
+const loadSharedComponent = (mountSelector, fileName, toggleSelector, panelSelector, prepareMount) => {
     const mount = document.querySelector(mountSelector);
     if (!mount || !currentScript) return;
 
@@ -54,10 +66,11 @@ const loadSharedComponent = (mountSelector, fileName, toggleSelector, panelSelec
         })
         .then((markup) => {
             mount.innerHTML = markup;
+            prepareMount?.(mount);
             initializePanel(mount, toggleSelector, panelSelector);
         })
         .catch((error) => console.error(error));
 };
 
-loadSharedComponent("#account-mount", "account.html", "#user-icon", "#account-manage");
+loadSharedComponent("#account-mount", "account.html", "#user-icon", "#account-manage", setAccountIcon);
 loadSharedComponent("#notifications-mount", "notifications.html", "#notification-btn", "#notification-box");

@@ -1,0 +1,68 @@
+Date : 2026-11-26 23:25:34
+Directory : e:\bugtrack-front
+Total : 32 files,  3265 codes, 1 comments, 462 blanks, all 3728 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |         10 |      1,691 |          0 |        281 |      1,972 |
+| HTML       |         12 |        977 |          0 |         57 |      1,034 |
+| JavaScript |         10 |        597 |          1 |        124 |        722 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                               |         32 |      3,265 |          1 |        462 |      3,728 |
+| . (Files)                                       |          4 |        382 |          0 |         59 |        441 |
+| autoriztion                                     |          3 |        224 |          0 |         36 |        260 |
+| create-team                                     |          3 |        237 |          0 |         28 |        265 |
+| create-ticket                                   |          3 |        469 |          1 |         70 |        540 |
+| join-team                                       |          3 |        127 |          0 |         16 |        143 |
+| main-page-QA                                    |          2 |        260 |          0 |         31 |        291 |
+| main-page-develop                               |          3 |        713 |          0 |         96 |        809 |
+| main-page-w-team                                |          3 |         75 |          0 |         11 |         86 |
+| project-w-r                                     |          4 |        396 |          0 |         61 |        457 |
+| team-page                                       |          4 |        382 |          0 |         54 |        436 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\bugtrack-front\account.html                  | HTML       |         25 |          0 |          5 |         30 |
+| e:\bugtrack-front\autoriztion\autorization.css  | PostCSS    |        175 |          0 |         29 |        204 |
+| e:\bugtrack-front\autoriztion\autorization.html | HTML       |         44 |          0 |          4 |         48 |
+| e:\bugtrack-front\autoriztion\autorization.js   | JavaScript |          5 |          0 |          3 |          8 |
+| e:\bugtrack-front\create-team\index.html        | HTML       |         62 |          0 |          3 |         65 |
+| e:\bugtrack-front\create-team\script.js         | JavaScript |         53 |          0 |         11 |         64 |
+| e:\bugtrack-front\create-team\style.css         | PostCSS    |        122 |          0 |         14 |        136 |
+| e:\bugtrack-front\create-ticket\index.html      | HTML       |        113 |          0 |         11 |        124 |
+| e:\bugtrack-front\create-ticket\script.js       | JavaScript |        105 |          1 |         17 |        123 |
+| e:\bugtrack-front\create-ticket\style.css       | PostCSS    |        251 |          0 |         42 |        293 |
+| e:\bugtrack-front\join-team\index.html          | HTML       |         54 |          0 |          2 |         56 |
+| e:\bugtrack-front\join-team\script.js           | JavaScript |          5 |          0 |          3 |          8 |
+| e:\bugtrack-front\join-team\style.css           | PostCSS    |         68 |          0 |         11 |         79 |
+| e:\bugtrack-front\main-page-QA\index.html       | HTML       |        134 |          0 |          5 |        139 |
+| e:\bugtrack-front\main-page-QA\style.css        | PostCSS    |        126 |          0 |         26 |        152 |
+| e:\bugtrack-front\main-page-develop\index.html  | HTML       |        192 |          0 |          1 |        193 |
+| e:\bugtrack-front\main-page-develop\script.js   | JavaScript |        218 |          0 |         45 |        263 |
+| e:\bugtrack-front\main-page-develop\style.css   | PostCSS    |        303 |          0 |         50 |        353 |
+| e:\bugtrack-front\main-page-w-team\index.html   | HTML       |         37 |          0 |          2 |         39 |
+| e:\bugtrack-front\main-page-w-team\script.js    | JavaScript |          0 |          0 |          1 |          1 |
+| e:\bugtrack-front\main-page-w-team\style.css    | PostCSS    |         38 |          0 |          8 |         46 |
+| e:\bugtrack-front\main-style.css                | PostCSS    |        238 |          0 |         33 |        271 |
+| e:\bugtrack-front\main_script.js                | JavaScript |         60 |          0 |         17 |         77 |
+| e:\bugtrack-front\notifications.html            | HTML       |         59 |          0 |          4 |         63 |
+| e:\bugtrack-front\project-w-r\demo-tickets.js   | JavaScript |         12 |          0 |          3 |         15 |
+| e:\bugtrack-front\project-w-r\index.html        | HTML       |        138 |          0 |         11 |        149 |
+| e:\bugtrack-front\project-w-r\script.js         | JavaScript |         35 |          0 |          8 |         43 |
+| e:\bugtrack-front\project-w-r\style.css         | PostCSS    |        211 |          0 |         39 |        250 |
+| e:\bugtrack-front\team-page\index.html          | HTML       |         73 |          0 |          6 |         79 |
+| e:\bugtrack-front\team-page\script.js           | JavaScript |        104 |          0 |         16 |        120 |
+| e:\bugtrack-front\team-page\style.css           | PostCSS    |        159 |          0 |         29 |        188 |
+| e:\bugtrack-front\team-page\tickets.html        | HTML       |         46 |          0 |          3 |         49 |
+| Total                                           |            |      3,265 |          1 |        462 |      3,728 |
++-------------------------------------------------+------------+------------+------------+------------+------------+

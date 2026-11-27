@@ -10,7 +10,7 @@
 <body class="app-page">
     <header class="app-header">
         <div id="user-box">
-            <div id="account-mount"></div>
+            <div id="account-mount" data-account-icon="developer-icon"></div>
             <div id="user-info">
                 <p>Пользователь</p>
                 <p>Разработчик</p>
@@ -32,7 +32,7 @@
                 <p>Разработчик</p>
             </div>
             <div>
-                <h1>Название проекта</h1>
+                <h1>BugTrack</h1>
                 <p>Роль: разработчик</p>
             </div>
         </section>
@@ -64,12 +64,13 @@
                         </div>
                         <p class="ticket-desc">После смены проекта тикеты появляются только после перезагрузки.</p>
                     </div>
-                    <div class="ticket">
-                        <div>
-                            <p class="ticket-name">Не копируется код</p>
-                            <p class="ticket-owner">Зарезервировано вами</p>
-                        </div>
-                        <p class="ticket-desc">Код приглашения не попадает в буфер обмена при нажатии на кнопку.</p>
+                    <div class="tickets-more-slot">
+                        <a class="button ticket-more" href="../team-page/tickets.html?member=me&;from=developer" aria-label="Показать ещё зарезервированные тикеты">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Показать ещё</span>
+                        </a>
                     </div>
                 </div>
                 <p style="font-size: 16px; line-height: 24px; color: var(--color-muted);">Свободные Багтикеты</p>
@@ -95,12 +96,13 @@
                         </div>
                         <p class="ticket-desc">После прочтения уведомления счётчик не уменьшается.</p>
                     </div>
-                    <div class="ticket">
-                        <div>
-                            <p class="ticket-name">Текст выходит за край</p>
-                            <p class="ticket-owner">Не назначен</p>
-                        </div>
-                        <p class="ticket-desc">Длинное название без пробелов выходит за границы карточки.</p>
+                    <div class="tickets-more-slot">
+                        <a class="button ticket-more" href="../team-page/tickets.html?scope=free&amp;from=developer" aria-label="Показать ещё свободные тикеты">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Показать ещё</span>
+                        </a>
                     </div>
                 </div>
             </div>

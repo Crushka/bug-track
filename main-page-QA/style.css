@@ -1,0 +1,151 @@
+body.app-page.qa-page {
+    display: block;
+    overflow: auto;
+}
+
+.qa-page .app-header #user-box {
+    gap: 10px;
+}
+
+.qa-page .app-header #user-info {
+    min-width: 79px;
+}
+
+.qa-page #user-info > :last-child {
+    color: var(--color-muted);
+    font-size: 10px;
+}
+
+.qa-page #notifications-mount {
+    margin-left: 10px;
+}
+
+.qa-page #notification-btn {
+    position: relative;
+}
+
+.qa-layout {
+    width: 1440px;
+    margin-inline: auto;
+    padding: 118px 172px 58px 188px;
+}
+
+.qa-greeting h1 {
+    color: var(--color-text);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.qa-greeting p {
+    margin-top: 10px;
+    color: var(--color-muted);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.qa-projects {
+    display: grid;
+    grid-template-columns: 682px 363px;
+    gap: 35px;
+    margin-top: 70px;
+}
+
+.qa-project-column {
+    padding-bottom: 32px;
+}
+
+.qa-project-column--available {
+    padding-left: 34px;
+    border-left: 1px solid var(--color-border);
+}
+
+.qa-projects-heading {
+    min-height: 64px;
+    padding-top: 8px;
+}
+
+.qa-projects-heading h2 {
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.qa-projects-heading p {
+    color: var(--color-muted);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.qa-project-grid {
+    display: grid;
+    grid-template-columns: 328px;
+    gap: 26px;
+    padding: 0;
+    list-style: none;
+}
+
+.qa-project-grid--assigned {
+    grid-template-columns: repeat(2, 328px);
+}
+
+.qa-project-card {
+    display: flex;
+    min-height: 136px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 14px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-white);
+}
+
+.qa-project-card h3 {
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.qa-project-card--linked {
+    padding: 0;
+}
+
+.qa-project-card--linked:hover,
+.qa-project-card--linked:focus-within {
+    border-color: var(--color-primary);
+}
+
+.qa-project-link {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.qa-project-link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.qa-project-card p {
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.qa-projects-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.qa-projects-actions .ticket-more:disabled {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    cursor: default;
+    font-family: inherit;
+}

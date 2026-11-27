@@ -1,19 +1,187 @@
-.app-page {
+body.app-page.team-page {
+    display: block;
+    overflow: auto;
+}
+
+.team-page .app-header #user-box {
+    gap: 10px;
+}
+
+.team-page .app-header #user-info {
+    width: 79px;
+}
+
+.team-page #user-info > :last-child {
+    color: var(--color-muted);
+    font-size: 10px;
+}
+
+.team-page #notifications-mount {
+    margin-left: 10px;
+}
+
+.team-page #notification-btn {
     position: relative;
 }
 
-#back {
-    display: flex;
-    flex-direction: row;
-    top: 84px;
-    left: 16px;
+.team-layout {
+    width: 1440px;
+    margin-inline: auto;
+    padding-block: 93px 54px;
+    padding-inline: 32px;
+}
+
+.team-page-title {
     position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.team-back {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    gap: 12px;
+    padding-inline: 12px 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: 24px;
     font-size: 14px;
     line-height: 24px;
-    padding: 12px 20px 12px 12px;
-    gap: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.team-back {
+    width: 188px;
     background-color: var(--color-white);
-    border-radius: 24px;
-    border: 2px solid var(--color-primary);
     color: var(--color-primary);
+}
+
+.team-back:hover {
+    background-color: var(--color-primary-soft);
+}
+
+.team-captain {
+    margin-top: 23px;
+}
+
+.team-section-title {
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    color: var(--color-muted);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.team-members {
+    margin-top: 27px;
+}
+
+.team-members::before {
+    content: "";
+    display: block;
+    width: 1319px;
+    height: 1px;
+    margin: 0 0 11px -10px;
+    background-color: var(--color-border);
+}
+
+#team-members-list {
+    display: grid;
+    gap: 42px;
+    margin-top: 27px;
+}
+
+.team-member-profile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 19px;
+}
+
+.team-member-name {
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.team-ticket-row {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin: 15px 0 0 19px;
+}
+
+.team-ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 328px);
+    gap: 13px;
+    padding: 0;
+    list-style: none;
+}
+
+.team-ticket {
+    display: flex;
+    min-height: 136px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 14px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-white);
+    overflow-wrap: anywhere;
+}
+
+.team-ticket-title {
+    color: var(--color-text);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.team-ticket-owner,
+.team-ticket-description {
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.team-ticket-row .ticket-more {
+    margin-bottom: 8px;
+}
+
+.team-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+.team-leave {
+    width: 328px;
+    height: 48px;
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.team-all-tickets {
+    margin-top: 23px;
+}
+
+.team-all-tickets .team-ticket-grid {
+    margin-top: 24px;
+}
+
+#member-tickets-empty {
+    margin-top: 16px;
+    color: var(--color-muted);
 }
